@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Верхняя шапка */
+.main-header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: #ff0000;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.brics-nav {
+    display: flex;
+}
+
+.brics-link {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.brics-link:hover {
+    color: #ff0000;
+}
+
+.search-section {
+    flex-grow: 1;
+    max-width: 600px;
+    margin: 0 20px;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 2px 0 0 2px;
+    font-size: 16px;
+}
+
+.search-btn {
+    padding: 8px 16px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+}
+
+.upload-btn,
+.auth-btn,
+.register-btn {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.upload-btn {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.auth-btn {
+    background-color: transparent;
+}
+
+.register-btn {
+    background-color: #ff0000;
+    color: white;
+}
+
+/* Вторая шапка с категориями */
+.category-nav {
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.category-nav .container {
+    display: flex;
+}
+
+.category-link {
+    padding: 8px 16px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 16px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+}
+
+.category-link.active,
+.category-link:hover {
+    background-color: #000;
+    color: white;
+}
+
+/* Основное содержимое */
+.main-content {
+    padding: 20px 0;
+}
+
+/* Приветственный баннер */
+.welcome-banner {
+    background: linear-gradient(135deg, #ff0000, #cc0000);
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.banner-content h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.banner-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.cta-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cta-btn.primary {
+    background-color: white;
+    color: #ff0000;
+}
+
+.cta-btn.secondary {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Популярные видео */
+.popular-videos {
+    margin-bottom: 40px;
+}
+
+.popular-videos h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.video-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail {
+    position: relative;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #e0e0e0;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #ff0000;
+}
+
+.video-info {
+    padding: 15px;
+}
+
+.language-tag {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.language,
+.level {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.language {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.level {
+    background-color: #f3e5f5;
+    color: #7b1fa2;
+}
+
+.video-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.video-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-text {
+    font-size: 14px;
+    color: #666;
+}
+
+.continue-btn {
+    padding: 6px 12px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.view-all {
+    text-align: center;
+}
+
+.view-all-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Преимущества */
+.features-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+}
+
+.feature {
+    text-align: center;
+    padding: 20px;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.feature p {
+    color: #666;
+}
+
+/* Подвал */
+.main-footer {
+    background-color: #202020;
+    color: #fff;
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #aaa;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-section {
+        margin-bottom: 10px;
+    }
+
+    .search-section {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .user-section {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .banner-content h2 {
+        font-size: 24px;
+    }
+
+    .banner-actions {
+        flex-direction: column;
+    }
+}

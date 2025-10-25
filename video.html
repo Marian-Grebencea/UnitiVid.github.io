@@ -1,0 +1,207 @@
+<!-- videos.html -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видеоуроки - Унитивид</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Верхняя шапка с навигацией -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-section">
+                <h1 class="logo">Унитивид</h1>
+                <nav class="brics-nav">
+                    <a href="#" class="brics-link">Россия</a>
+                    <a href="#" class="brics-link">Китай</a>
+                    <a href="#" class="brics-link">Индия</a>
+                    <a href="#" class="brics-link">Бразилия</a>
+                    <a href="#" class="brics-link">ЮАР</a>
+                </nav>
+            </div>
+            <div class="search-section">
+                <div class="search-bar">
+                    <input type="text" placeholder="Поиск уроков...">
+                    <button class="search-btn">Найти</button>
+                </div>
+            </div>
+            <div class="user-section">
+                <button class="upload-btn">Загрузить видео</button>
+                <button class="auth-btn">Войти</button>
+                <button class="register-btn">Регистрация</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Вторая шапка с категориями -->
+    <nav class="category-nav">
+        <div class="container">
+            <a href="index.html" class="category-link">Главная</a>
+            <a href="videos.html" class="category-link active">Видеоуроки</a>
+            <a href="#" class="category-link">Статьи</a>
+            <a href="profile.html" class="category-link">Личный кабинет</a>
+        </div>
+    </nav>
+
+    <!-- Основное содержимое страницы видео -->
+    <main class="main-content">
+        <div class="container">
+            <h1>Видеоуроки</h1>
+            <p class="page-description">Выбирайте уроки по языкам и уровням</p>
+
+            <!-- Фильтры -->
+            <div class="filters-section">
+                <div class="filter-group">
+                    <h3>Язык:</h3>
+                    <div class="filter-options">
+                        <button class="filter-btn active">Все</button>
+                        <button class="filter-btn">Английский</button>
+                        <button class="filter-btn">Испанский</button>
+                        <button class="filter-btn">Французский</button>
+                        <button class="filter-btn">Немецкий</button>
+                        <button class="filter-btn">Итальянский</button>
+                        <button class="filter-btn">Китайский</button>
+                        <button class="filter-btn">Португальский</button>
+                        <button class="filter-btn">Японский</button>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Уровень:</h3>
+                    <div class="filter-options">
+                        <button class="filter-btn active">Все</button>
+                        <button class="filter-btn">Начальный</button>
+                        <button class="filter-btn">Средний</button>
+                        <button class="filter-btn">Продвинутый</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-info">
+                <p>Найдено уроков: 9</p>
+            </div>
+
+            <!-- Список видео -->
+            <div class="videos-list">
+                <!-- Видео 1 -->
+                <div class="video-list-item">
+                    <div class="video-preview">
+                        <img src="https://via.placeholder.com/200x120" alt="Основные фразы для путешествий">
+                    </div>
+                    <div class="video-details">
+                        <div class="language-tag">
+                            <span class="language">Испанский</span>
+                            <span class="level">Начальный</span>
+                        </div>
+                        <h3 class="video-title">Основные фразы для путешествий</h3>
+                        <div class="progress-info">
+                            <span>Прогресс: 75%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-actions">
+                        <button class="continue-btn">Продолжить</button>
+                    </div>
+                </div>
+
+                <!-- Видео 2 -->
+                <div class="video-list-item">
+                    <div class="video-preview">
+                        <img src="https://via.placeholder.com/200x120" alt="Грамматика для начинающих">
+                    </div>
+                    <div class="video-details">
+                        <div class="language-tag">
+                            <span class="language">Английский</span>
+                            <span class="level">Начальный</span>
+                        </div>
+                        <h3 class="video-title">Грамматика для начинающих</h3>
+                        <div class="progress-info">
+                            <span>Прогресс: 45%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-actions">
+                        <button class="continue-btn">Продолжить</button>
+                    </div>
+                </div>
+
+                <!-- Видео 3 -->
+                <div class="video-list-item">
+                    <div class="video-preview">
+                        <img src="https://via.placeholder.com/200x120" alt="Деловой английский">
+                    </div>
+                    <div class="video-details">
+                        <div class="language-tag">
+                            <span class="language">Английский</span>
+                            <span class="level">Продвинутый</span>
+                        </div>
+                        <h3 class="video-title">Деловой английский</h3>
+                        <div class="progress-info">
+                            <span>Прогресс: 20%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 20%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-actions">
+                        <button class="continue-btn">Продолжить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Унитивид</h3>
+                    <p>Образовательно-развлекательная платформа для изучения языков и культур стран БРИКС</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="videos.html">Видеоуроки</a></li>
+                        <li><a href="#">Статьи</a></li>
+                        <li><a href="profile.html">Личный кабинет</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Страны БРИКС</h4>
+                    <ul>
+                        <li><a href="#">Россия</a></li>
+                        <li><a href="#">Китай</a></li>
+                        <li><a href="#">Индия</a></li>
+                        <li><a href="#">Бразилия</a></li>
+                        <li><a href="#">ЮАР</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Поддержка</h4>
+                    <ul>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                        <li><a href="#">Правила использования</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Унитивид. Учим языки и культуры вместе!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
